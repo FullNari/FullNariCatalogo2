@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Catálogo FULL NARI!</title>
+<style>
+    @page {
+        size: A4;
+        margin: 15mm 12mm;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+        color: #e2e8f0;
+        background-color: #0b0d13;
+        font-size: 9.5pt;
+        line-height: 1.4;
+    }
+    .catalog-header {
+        background-color: #050609;
+        margin: 0 0 25px 0;
+        padding: 25px 20px;
+        text-align: center;
+        border-bottom: 4px solid #ff1744;
+    }
+    .logo-main {
+        font-size: 34pt;
+        font-weight: 900;
+        color: #ff1744;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        line-height: 1;
+    }
+    .logo-sub {
+        font-size: 22pt;
+        font-weight: 800;
+        color: #0b0d13;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: -5px 0 0 0;
+        line-height: 1;
+        text-shadow: 
+            -1px -1px 0 #ff1744,  
+             1px -1px 0 #ff1744,
+            -1px  1px 0 #ff1744,
+             1px  1px 0 #ff1744;
+    }
+    .catalog-header p {
+        margin: 12px 0 0 0;
+        font-size: 11pt;
+        color: #00e5ff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .category-section {
+        margin: 0 15px 35px 15px;
+        clear: both;
+    }
+    .category-title {
+        font-size: 18pt;
+        color: #ff1744;
+        border-bottom: 2px solid #00e5ff;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .subcategory-block {
+        background-color: #121622;
+        border-left: 4px solid #ff1744;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 0 8px 8px 0;
+        page-break-inside: avoid;
+    }
+    .subcategory-title {
+        font-size: 12pt;
+        color: #00e5ff;
+        margin: 0 0 12px 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    /* Grid adaptado */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 12px;
+    }
+    /* Tarjeta con alineación horizontal y altura mínima adaptada */
+    .product-card {
+        background: #181d2a;
+        border: 1px solid #2d3748;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 92px;
+    }
+    /* Estilo de la foto del producto (Aumentada a 72px) */
+    .product-img {
+        width: 72px;
+        height: 72px;
+        border-radius: 6px;
+        object-fit: cover;
+        background-color: #0b0d13;
+        border: 1px solid #00e5ff;
+        flex-shrink: 0;
+    }
+    /* Contenedor de textos a la derecha */
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        height: 72px; /* Alineado a la altura de la imagen */
+    }
+    .product-name {
+        font-weight: 600;
+        font-size: 9pt;
+        color: #ffffff;
+        margin: 0;
+        line-height: 1.2;
+    }
+    .price-tag {
+        font-weight: bold;
+        color: #ff1744;
+        font-size: 10.5pt;
+        text-align: right;
+        margin-top: auto;
+        background: rgba(255, 23, 68, 0.1);
+        padding: 2px 6px;
+        border-radius: 4px;
+        align-self: flex-end;
+    }
+</style>
+</head>
+<body>
+
+    <div class="catalog-header">
+        <div class="logo-main">Full</div>
+        <div class="logo-sub">Nari!</div>
+        <p>Helados • Kiosco • Bebidas • Golosinas</p>
+    </div>
+
+    <div class="category-section">
+        <div class="category-title">🍦 Helados</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">⚡ Impulsivos</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="coolfruit.jfif" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cool Fruit</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="coolpinta.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pinta Lengua</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="coolabc.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Palito Agua ABC</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="monstruo.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Monstruoso</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="inside.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Inside</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cream.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cool Cream</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="creamgrani.jpg" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cool Cream Granizado</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bombon_neiro.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bomboneiro</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="yo_crock.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Yo Crock</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="eclipse.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Eclipse</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="eclipse_pistacho.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Eclipse Pistacho</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="xxl_clasico_almendras.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">XXL Clasico c/Almendras</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="yobar.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Yobar</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="alfajor_helado_yo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Alfajor Helado Yo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="magnifico.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Magnifico</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="fiestitas.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Fiestita</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="stop_yo_sin_tacc.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Stop Yo Sin TACC</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="circus.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Circus</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="paleta_ryf.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Paleta RyF</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bananita.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bananita</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍽️ Gastronomía</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bocha_americana_split.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bocha Americana Split</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="tricolor.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tricolor</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="almendrado.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Almendrado</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bombon_suizo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bombon Suizo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bombon_escoces_bn.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">B. Escoces Blanco/Negro</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bombon_avellanas.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bombon de Avellanas</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🎯 Target</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bandeja_500g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bandeja 500gr</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="balde_1_5kg.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Balde 1.5kg Especiales</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="tutti_frutti.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tutti Frutti</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="agua.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Agua</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="agua_3_gustos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Agua 3 Gustos</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="crema.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Crema</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="q_bombon_target.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Q. Bombon Target</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="kono_choc_amer.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Kono Choc/Amer</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mix_3.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Mix 3</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">✨ Otros</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bomboncitos_block_bon_o_bon.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bomboncitos Bon o Bon</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bomboneiro.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bomboncitos Block</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cono_cofler_block.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cono Cofler Block</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="suizo_yo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Suizo Yo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">🍫 Alfajores</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">🔺 Triples</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bon_o_bon_blanco.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bon o Bon Blanco</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="chocotorta.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Chocotorta</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="fantoche_blanco_85g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Fantoche Blanco x85g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="oreo_56g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oreo 56g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">⭐️ Clásicos 70g</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="guaymallen_bn.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Guaymallen Blanco/Negro</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="milka_ddl_blanco_mousse.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Milka DDL/Blanco/Mousse</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rasta_negro.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Rasta Negro</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="aguila_dark.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Aguila Dark</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍰 Minitorta Aguila</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="minitorta_aguila_blanco.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Blanco 72g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="minitorta_aguila_brownie.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Brownie 74g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="minitorta_aguila_clasica.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Clásica 72g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="minitorta_aguila_coco.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Coco 73g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">✨ Otros</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="alfajor_helado_yo_otro.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Helado Yo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="milka_oreo_61g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Milka Oreo 61g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pepito_57g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pepito 57g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="fantoche_mini_x6.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Fantoche Mini x6</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bagley_3_0_bn.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bagley 3.0 Blanco/Negro 73.5g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cofler_block_triple.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cofler Block Triple 60g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="tofi_bn.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tofi Blanco/Negro 73g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">🍫 Chocolates y Golosinas</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍫 Barras</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="cadbury_yog_frutilla.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cadbury Yog Frutilla 29g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cofler_yog_frutilla.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cofler Yog Frutilla 35g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="kinder_bueno.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Kinder Bueno 43g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="arcor_blanco_negro.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Arcor Blanco/Negro</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="tofi_barra_bn.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tofi Blanco/Negro 28g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="aguila_14g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Aguila 14g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🔴 Cofler</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="cofler_cups.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cups Original/Peanut Butter</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cofler_dubai.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Estilo Dubai 45g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cofler_air.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Air Almendras/Blanco/Bon o Bon/Con Leche/Mixto/Tofi 55-70g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="block_grande.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Block 110/170/300g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="block_miti.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Block Miti 170g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cofler_almendras_rocklets.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Con Almendras/Rocklets 55g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="graffiti_45g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Graffiti 45g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="tres_placeres.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tres Placeres 55g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍬 Bon o Bon</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_dubai.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Dubai</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_supreme.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Supreme x2</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_oblea.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oblea 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_oblea_blanca.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oblea Blanca 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_oblea_xl.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oblea XL 45g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bonobon_15g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">15g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">✨ Otros</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="dolca_30g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Dolca 14g/30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="marroc_14g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bocadito Marroc 14g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="kinder_barrita.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Kinder Barrita</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="kinder_maxi.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Kinder Maxi 21g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rocklets.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Rocklets 20g/40g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="oblea_cofler_maax.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oblea Cofler Maax Avellanas/Chocolinas Blanca 60g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">🍬 Gomitas y Caramelos</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">🧸 Mogul</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="mogul_ositos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Ositos 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_dientes.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Dientes 150g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_eucalipto.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Eucalipto 90g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_moras.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Moras 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_cerebritos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cerebritos 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_extreme.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Extreme 50g/200g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_ladrillos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Ladrillos 100g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_frutales.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Frutales 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_piecitos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Piecitos 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_tiburon.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Tiburon 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_gusanitos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Gusanitos 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mogul_jelly_beans.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Jelly Beans 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍬 Caramelos</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="caramelos_miel.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Miel</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="butter_toffees.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Butter Toffees 90g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🎈 Chicles</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bubbaloo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">BUBBALOO todos</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="topline_7.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Topline 7 Clean Mint 12U</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🟢 Menthoplus</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_acidos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Acidos Cherry/Naranja 30.6g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_cafe_latte.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cafe Latte 30g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_cereza_comun.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cereza 30.6g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+     
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_creamix_frutilla.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Creamix Frutilla Frio 27.2g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_menta.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Menta 30.6g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_miel.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Miel 30.6g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_strong.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Strong 30.6g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_zero.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Zero</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_zero_cherry.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Zero Cherry</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="menthoplus_zero_durazno.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Zero Durazno</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">🍿 Snacks y Galletas</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">🥔 Papas</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="doritos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Doritos 129g/77g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="lays_85g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">LAYS 85g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pringles_39g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pringles 39g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cheetos_85g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Cheetos 85g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍪 Galletas</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="bagley_surtido_400g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bagley Surtido 400g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="oreo_chocolate_118g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Oreo Chocolate 118g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="galletas_paseo_300g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Paseo 300g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pepitos_118g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pepitos 118g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="serranas_sandwich_x3.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Serranas Sandwich 336g x3</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="trichoc_300g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Trichoc 300g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="trio_frolitas_300g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Trio Frolitas 300g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="kesitas_125g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Kesitas 125g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rex_125g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Rex 125g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="saladix_varias.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Saladix Calabresa/Jamon/Pizza 100g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="serranitas_x3.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Serranitas 315g x3</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">✨ Otros</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="9_de_oro_200g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bizcochos 9 de Oro 200g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="don_satur_200g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Don Satur 200g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="bandeja_sandwich_comun.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Bandeja Sandwich Comun</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="sandwich_triangulo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Sandwich Triangulo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pipas_gigantes.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pipas Gigantes 180g/50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="semillitas_mirasoles.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Semillitas Mirasoles 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rueditas_pep_pizza.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Rueditas Pep Pizza 74g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pehuamar_maicitos.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pehuamar Maicitos 125g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="mani_blanco_700g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Mani Blanco 700g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="ramen_carne_pollo.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Ramen Carne/Pollo 70g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">🏪 Kiosco Varios</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">🧼 Limpieza</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="jabon_lux.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Jabon Lux</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="papel_higienico_x4.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Papel Higiénico x4</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rollo_cocina_x3.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Rollo Cocina x3</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="toallitas_linas.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Toallitas Linas c/alas</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🚬 Cigarrillos</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="cigarrillos_mill.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Mill</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="chester_box_menta.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Chester Box Menta</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="chester_10.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Chester 10</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="chesterfield_comun_mentolado.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Chesterfield Común/Mentolado</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="cigarrillos_boxer.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Boxer</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="marlboro_varios.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Marlboro 12/Box/Común/Crafted Rojo/Coral Uva/Menta/Rojo</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="marlboro_uva_xl.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Uva XL</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="master_comun.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Master Común</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="milenio_click.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Milenio Click Uva Menta/Rojo/Verde</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="parliament.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Parliament</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="philip_morris_varios.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Philip Morris 12/Box/Común/Menta/Red Select</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pier_box.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pier Box</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍂 Tabaco</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="tabaco_van_kiff.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Van Kiff</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="papelillos_ocb.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Papelillos OCB</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="filtros_tabaco.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Filtros 6mm/8mm</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="naipes_40.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Naipe x40</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="naipes_50.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Naipes 50</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">✨ Otros</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="encendedor_bic.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Encendedor Bic Maxi/Mini</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="candela_clasico.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Candela Clasico</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="gillette_prestobarba.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Gillette Prestobarba</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="rexona_desodorante.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Desodorante Rexona H/M 150ml</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="talco_efficient.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Talco Efficient 100g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="off_family.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Off Family 165ml</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="espirales_raid.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Espirales Raid x12</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="raid_azul_440.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Raid Azul 440</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="curitas_8u.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Curitas 8U</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="pila_energizer.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pila Energizer AA/AAA</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <div class="category-section">
+        <div class="category-title">📦 Otros Productos</div>
+        
+        <div class="subcategory-block">
+            <div class="subcategory-title">☕ Café</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="nescafe_170g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Nescafé 170g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="nesquik_360g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Nesquik 360g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="la_virginia_50g.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">La Virginia Instantáneo 50g</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="la_hoja_mate_cocido.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">La Hoja Mate Cocido</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🥪 Fiambrería</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="pebete_jyq.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Pebete JYQ</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🍰 Postres</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="almendrado_postre_mio.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Almendrado Postre Mio</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img class="product-img" src="postres_varios_chaja.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Postres Chaja, Choco, Oreo, Tiramisú y Borracho</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🧴 Mayonesa</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="natura_mayonesa.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Natura Sachet 125cc</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategory-block">
+            <div class="subcategory-title">🧂 Sal</div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img class="product-img" src="celusal_fina.png" alt="" onerror="this.style.display='none'">
+                    <div class="product-details">
+                        <div class="product-name">Celusal Fina</div>
+                        <div class="price-tag">$ ________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> </body>
+</html>
